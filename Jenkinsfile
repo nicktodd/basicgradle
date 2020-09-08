@@ -10,7 +10,8 @@ pipeline {
         }
         stage('Delivery') {
             steps {
-                sh 'aws s3 cp build/libs/CompactDiscNoDatabaseBoot-0.0.1-SNAPSHOT.jar s3://training.conygre.com/allstate/compactdiscs.jar --region eu-west-1'
+                //sh 'aws s3 cp build/libs/CompactDiscNoDatabaseBoot-0.0.1-SNAPSHOT.jar s3://training.conygre.com/allstate/compactdiscs.jar --region eu-west-1'
+                echo "faked a deployment"
             }
         }
         
